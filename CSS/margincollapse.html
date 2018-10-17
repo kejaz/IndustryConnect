@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p.a {
+            margin: 30px 0;
+        }
+
+        p.b {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Margin Collapse Example</h1>
+    <p>Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.</p>
+
+    <p class="a">A paragraph with a top and bottom margin of 30 pixels.</p>
+    <p class="b">A paragraph with a top and bottom margin of 20 pixels.</p>
+
+    <p>The vertical margin between the two paragraphs above should be 50px (30px + 20px). But due to margin collapse, the actual margin ends up being 30px!</p>
+
+</body>
+</html>

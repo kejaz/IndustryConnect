@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Closure Example</h1>
+    <p>
+        <h2>What is a closure?</h2>
+        A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function’s variables — a scope chain.
+        <br><br>
+        The closure has three scope chains:
+        <br><br>
+        1. it has access to its own scope — variables defined between its curly brackets
+        <br>
+        2. it has access to the outer function’s variables
+        <br>
+        3. it has access to the global variables
+    </p>
+<script>
+    // ****** A Simple Closure ****** //
+
+    function outer() {
+        var b = 10;
+        function inner() {
+
+            var a = 20;
+            console.log(a + b);
+        }
+        return inner;
+    }
+    var X = outer(); //outer() invoked the first time
+    var Y = outer(); //outer() invoked the second time
+
+
+    //console.log(typeof (X)); //X is of type function
+    //console.log(typeof (Y)); //Y is of type function
+
+    //console.log(X); //X holding inner function
+    //console.log(Y); //Y holding inner function
+
+   // X(); // X() invoked the first time
+    //X(); // X() invoked the second time
+    //X(); // X() invoked the third time
+    //Y(); // Y() invoked the first time
+
+
+    //console.dir(X); //use console.dir() instead of console.log()
+
+
+    //************************************************************************************************
+    function outer1() {
+        var b = 10;
+        var c = 100;
+        function inner1() {
+
+            var a = 20;
+            console.log("a= " + a + " b= " + b);
+            a++;
+            b++;
+        }
+        return inner1;
+    }
+
+    var X = outer1();  // outer() invoked the first time
+    var Y = outer1();  // outer() invoked the second time
+    //end of outer() function executions
+
+     X(); // X() invoked the first time
+     X(); // X() invoked the second time
+     X(); // X() invoked the third time
+     Y(); // Y() invoked the first time
+</script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function varExample() {
+            var a = 10;
+            var a = 5; 
+            console.log(a);  // output 5
+            if (true) {
+                var a = 20;
+                console.log(a); // output 20
+            }
+            console.log(a);  // output 20
+        }
+        //varExample();
+        function letExample() {
+            let a = 10;
+            let a = 20; //Exception thrown
+            console.log(a);  // output 10
+            if (true) {
+                let a = 20;
+                console.log(a); // output 20
+            }
+            console.log(a);  // output 10
+        }
+        //letExample();
+
+        function constExample() {
+            const MY_VARIABLE = 10;
+            //MY_VARIABLE = 20; //Exception thrown
+            console.log(MY_VARIABLE);  //output 10 
+        }
+        //constExample();
+
+        function Test(a)
+        {
+            return "Value is " + a;
+        }
+        //console.log(Test(10));
+
+        function CompairDouble(x, y)
+        {
+            if (x == y) {
+                console.log("True");
+            }
+            else
+            {
+                console.log("False");
+            }
+        }
+        function CompairTriple(x, y) {
+            if (x === y) {
+                console.log("True");
+            }
+            else {
+                console.log("False");
+            }
+        }
+        //CompairDouble(5, 5);
+        //CompairDouble(5, 6);
+        //CompairDouble(5, "5");
+        //CompairDouble('a', "a");
+
+        //CompairTriple(5, 5);
+        //CompairTriple(5, 6);
+        //CompairTriple(5, "5");
+
+
+        var message = "My name is ";
+        function showMessage(name)
+        {
+            alert(message + name);
+        }
+        //showMessage("Kashif");
+
+
+        //function getCounter()
+        //{
+        //    var count = 0;
+        //    return function () {
+        //        count++;
+        //        alert(count);
+        //    } 
+        //}
+
+        var myNumber = 5;
+        function checkVaribale()
+        {
+            var myNumber = 10;
+            console.log(myNumber);
+        }
+        //checkVaribale();
+
+        //clouser examples
+        function showName(firstName, lastName) { 
+            var nameIntro = "Your name is ";
+            // this inner function has access to the outer function's variables, including the parameter
+            function makeFullName() { 
+                return nameIntro + firstName + " " + lastName; 
+            }
+            return makeFullName();
+        }
+        console.log(showName("Kashif", "Ejaz")); // Name is Kashif Ejaz          
+        //function getCounter()
+        //{
+        //    var counter = 0;
+        //    return function () {
+        //        counter++;
+        //        console.log(counter);
+        //    }
+        //}
+
+        //getCounter();
+        //console.log(myNumber);
+
+        //var counter = 0;
+        //var add = (function () {
+        //    var counter = 0;
+        //    return function () { counter += 1; return counter }
+        //})();
+
+        //add();
+        //add();
+        //add();
+        //console.log(add());
+         //varExample();
+         //letExample();
+         //constExample();
+         //console.log(Test(10));
+        //var ab = 'ab';
+        
+        
+        //var counter = getCounter();
+        //checkVaribale();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

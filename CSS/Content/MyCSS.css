@@ -1,0 +1,64 @@
+﻿body {
+
+}
+
+#myDiv1 {
+    background-color:burlywood;    
+}
+
+/*p {
+    background-color:darkseagreen;
+}*/
+
+/*#myDiv3{
+    background-color: chocolate;
+}*/
+
+/** {
+    font-family:'Agency FB'
+}*/
+
+ /*div *{
+    background-color:white;
+ }*/
+
+/*div:nth-child(2) {
+    font-family:'Century Gothic';
+    background-color:blue;
+    font-size:larger;
+}*/
+
+/*a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+    font-size:x-large;
+}
+a:active {
+    color: blue;
+}*/
+/*p::first-line {
+    color:cornflowerblue;
+    font-variant: small-caps;
+}*/
+/*div p {
+    background-color: yellow;
+}*/
+/*div > p {
+    background-color: darkcyan;
+}*/
+/*div + p {
+    background-color: darkblue;
+    color:white;
+}*/
+
+/*div ~ p {
+    background-color: darkorchid;
+    color: white;
+}*/

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Scope</title>
+    <script>
+        var message = "My name is "; //global variable
+
+        function showMessage() {
+            var myName = "Jusain Pham"; //local variable
+            alert(message + myName);
+        }
+
+        function textMe() {
+            alert(myName); //this function can't access myName varibale
+        }
+        showMessage();
+        textMe();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

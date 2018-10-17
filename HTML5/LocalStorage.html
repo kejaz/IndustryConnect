@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Local Storage</title>
+</head>
+<body>
+    <a href="Example-1.html">Next Page</a>
+    <br>
+    <a href="#" onclick="clearStorage()">Clear Storage</a>
+<script>
+    // Store
+    //localStorage.setItem("lastname", "Smith"); 
+    sessionStorage.setItem("lastname", "Smith"); 
+    function clearStorage() {
+        sessionStorage.clear();
+    }
+</script>
+</body>
+</html>
