@@ -12,10 +12,10 @@ namespace ConsoleApplication
         static void Main(string[] args)
         {
             var program = new Program();
-            //Mapper.CreateMap<Customer, CustomerViewItem>()
-            //    .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.FirstName));
+            Mapper.CreateMap<Customer, CustomerViewItem>()
+                .ForMember(dest => dest.FN, opt => opt.MapFrom(src => src.FirstName));
 
-            Mapper.CreateMap<Customer, CustomerViewItem>();
+            //Mapper.CreateMap<Customer, CustomerViewItem>();
             program.Run();
         }
 
@@ -56,7 +56,7 @@ namespace ConsoleApplication
 
     public class CustomerViewItem
     {
-        public string FirstName { get; set; }
+        public string FN { get; set; }
         public string LastName { get; set; }
         public DateTime DateOfBirth { get; set; }
 
